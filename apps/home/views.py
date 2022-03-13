@@ -1,7 +1,4 @@
 # -*- encoding: utf-8 -*-
-"""
-Copyright (c) 2019 - present AppSeed.us
-"""
 
 from django import template
 from django.contrib.auth.decorators import login_required
@@ -76,6 +73,34 @@ def tests(request):
         weight = request.POST.get('weight')
         places1 = request.POST.get('places1')
         places2 = request.POST.get('places2')
+        disorders = request.POST.get('disorders')
+        if agegrp =="less10":
+            predict ="Be With your phone less 😊"
+        elif agegrp!="less10" and (sleep!='8' or sleep!='less6') and weight=="over":
+            predict= "You have obesity caused be sleeping disorder"
+
+        elif agegrp!="less10" and (sleep!='8' or sleep!='less6') and weight=="under":
+            predict="You have weightloss problem caused be sleeping disorder"
+        
+        elif agegrp!="less10" and weight=="under" and places1=="lowerabdomen" and places2=="stomach":
+            predict="You might have period cramps if not visit a gynacologist"
+        
+        elif agegrp!="less10" and weight=="under" and places1=="stomach" and places2=="lowerabdomen":
+            predict= "You might have period cramps if not visit a gynacologist"
+        
+        elif agegrp!="less10" and weight=="over" and places1=="lowerabdomen" and places2=="stomach":
+            predict= "You might have period cramps if not visit a gynacologist"
+        
+        elif agegrp!="less10" and weight=="over" and places1=="stomach" and places2=="lowerabdomen":
+            predict= "You might have period cramps if not visit a gynacologist"
+        
+        elif agegrp!="less10" and (sleep!='8' or sleep!='less6') and weight=="normal" and (places1=="chest" or places2=="chest") and disorders=="breathlessness":
+            predict = "You might have anxiety issues"
+        
+        elif agegrp!="less10" and (sleep!='8' or sleep!='less6') and weight=="normal":
+            predict = "You may have sleeping disorder"
+    
+        return render(request,'home/tests.html',{'predict':predict})
     return render(request,'home/tests.html')
 
 

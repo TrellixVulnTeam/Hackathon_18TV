@@ -6,38 +6,13 @@
 
 <div class="container" style="margin-top: 30px;">
 
-  <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+  <form class="well form-horizontal" action="{% url 'home'%}" method="POST"  id="test_form">{% csrf_token %}
 <fieldset>
 
 <!-- Form Name -->
 <legend><center><h1><b>Questionnaire</b></h1></center></legend><br>
 
 <!-- Text input-->
-<div class="row">
-
-<div class="form-group col-md-6">
-  <label class=" control-label">First Name</label>  
-  <div class=" inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-<!-- Text input-->
-
-<div class="form-group col-md-6 ">
-  <label class=" control-label" >Last Name</label> 
-    <div class="inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-</div>
 
 <div class="row">
   <div class="form-group col-md-6"> 
@@ -158,6 +133,8 @@
 </div>
 </div>
 </div>
+
+<label>{{predict}}</label>
 <!-- Select Basic -->
 
 <!-- Button -->
