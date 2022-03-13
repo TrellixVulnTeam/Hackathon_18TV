@@ -1,0 +1,227 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Tables {% endblock title %}
+
+{% block content %}
+
+<div class="container" style="margin-top: 30px;">
+
+  <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend><center><h1><b>Questionnaire</b></h1></center></legend><br>
+
+<!-- Text input-->
+<div class="row">
+
+<div class="form-group col-md-6">
+  <label class=" control-label">First Name</label>  
+  <div class=" inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group col-md-6 ">
+  <label class=" control-label" >Last Name</label> 
+    <div class="inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="row">
+  <div class="form-group col-md-6"> 
+  <label class="control-label">Select your age group</label>
+    <div class="selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="agegrp" class="form-control selectpicker">
+      <option value="">Select</option>
+      <option value="less10">Less than 10</option>
+      <option value="10215">10-15</option>
+      <option value="16225">16-25</option>
+      <option value="25245">25-45</option>
+      <option "46above">46 and above</option>
+    </select>
+  </div>
+</div>
+</div>
+  
+<!-- Text input-->
+
+<div class="form-group col-md-6"> 
+  <label class=" control-label">Do you have any of the below listed sleeping problems</label>
+    <div class=" selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="sleep" class="form-control selectpicker">
+      <option value="">Select</option>
+      <option value="less4">Sleeps less than 4 hours</option>
+      <option value="less6">Sleeps less than 6 hours</option>
+      <option value="8">Sleeps 8 hours</option>
+      <option value="more8">Sleeps more than 8 hours</option>
+    </select>
+  </div>
+</div>
+</div>
+</div>
+<!-- Text input-->
+
+
+<!-- Text input-->
+
+<!-- Text input-->
+<div class="row">
+<div class="form-group col-md-6"> 
+  <label class="control-label">Do you have weight problems?</label>
+    <div class="selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="weight" class="form-control selectpicker">
+      <option value="">Select</option>
+      <option value="under">Under Weight</option>
+      <option value="normal">Normal</option>
+      <option value="over">Over Weight</option>
+    </select>
+  </div>
+</div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group col-md-6"> 
+  <label class="control-label">Do you Experience pain in any of these places I?</label>
+    <div class="selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="places1" class="form-control selectpicker">
+      <option value="">Select</option>
+      <option value="neck">Neck</option>
+      <option value="shoulder">Shoulder</option>
+      <option value="chest">Chest</option>
+      <option value="legs">Legs</option>
+      <option value="stomach">Stomach</option>
+      <option value="lowerabdomen">Lower Abdomen</option>
+      <option value="ears">Ears</option>
+    </select>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Text input-->
+<div class="row">
+  <div class="form-group col-md-6"> 
+    <label class="control-label">Do you Experience pain in any of these places II?</label>
+      <div class="selectContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+      <select name="places2" class="form-control selectpicker">
+        <option value="">Select</option>
+        <option value="neck">Neck</option>
+      <option value="shoulder">Shoulder</option>
+      <option value="chest">Chest</option>
+      <option value="legs">Legs</option>
+      <option value="stomach">Stomach</option>
+      <option value="lowerabdomen">Lower Abdomen</option>
+      <option value="ears">Ears</option>
+      </select>
+    </div>
+  </div>
+  </div>
+
+<div class="form-group col-md-6"> 
+  <label class="control-label">Any other disorders?</label>
+    <div class="selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="disorders" class="form-control selectpicker">
+      <option value="">Select</option>
+      <option value="overeat">Over eatting</option>
+      <option value="nausea">Nausea</option>
+      <option value="dizzy">Dizzy</option>
+      <option value="breathlessness">Shortness of breath</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+</div>
+</div>
+</div>
+<!-- Select Basic -->
+
+<!-- Button -->
+<div class="form-group col-md-12" style="text-align: center;">
+  <label class=" control-label"></label>
+  <div class="col-md-12" ><br>
+    <button type="submit" class="btn btn-danger" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp SUBMIT &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+{% endblock content %}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}{% endblock javascripts %}
+<script>
+  $(document).ready(function() {
+    $('#contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            first_name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please enter your First Name'
+                    }
+                }
+            },
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please enter your Last Name'
+                    }
+                }
+            },
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#contact_form').data('bootstrapValidator').resetForm();
+
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
+        });
+});
+</script>

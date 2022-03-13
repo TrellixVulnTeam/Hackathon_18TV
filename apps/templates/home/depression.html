@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HEALTH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body style=" background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);">
+
+  <!-- Links (sit on top) -->
+  
+  
+  <!-- Header with image -->
+  
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand  w3-large" style="margin: 30px 250px; border-style:inset; border-width:50px;">
+  
+  <!-- About Container -->
+  <div class="w3-container" id="about" style="background-color: #6495ED;">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ARE YOU DEPRESSED??</span></h2>
+    <p>Depression (major depressive disorder) is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. Fortunately, it is also treatable. Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. It can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home.</p>
+    <p>Symptoms must last at least two weeks and must represent a change in your previous level of functioning for a diagnosis of depression.
+
+        Also, medical conditions (e.g., thyroid problems, a brain tumor or vitamin deficiency) can mimic symptoms of depression so it is important to rule out general medical causes.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Depression is a common illness worldwide, with an estimated 3.8% of the population affected, including 5.0% among adults and 5.7% among adults older than 60 years (1). Approximately 280 million people in the world have depression .</i></p>
+   
+    </div>
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">HOW TO COPE UP WITH DEPRESSION??</span></h2>
+    <ul>
+        <li><h4><b>Stay in touch</b></h4><p>Don't withdraw from life. Socialising can improve your mood. Keeping in touch with friends and family means you have someone to talk to when you feel low.  </p></li>
+        <li><h4><b>Be more active</b></h4><p>Take up some form of exercise. There's evidence that exercise can help lift your mood. If you haven't exercised for a while, start gently by walking for 20 minutes every day. </p></li>
+        <li><h4><b>Face your Fears</b></h4><p>Don't avoid the things you find difficult. When people feel low or anxious, they sometimes avoid talking to other people. Some people can lose their confidence in going out, driving or travelling.
+
+            If this starts to happen, facing up to these situations will help them become easier.</p></li>
+        <li><h4><b>Try to eat a healthy diet</b></h4><p>Some people don't feel like eating when they're depressed and are at risk of becoming underweight. Others find comfort in food and can put on excess weight.
+
+            Antidepressants can also affect your appetite.
+            
+            If you're concerned about weight loss, weight gain or how antidepressants are affecting your appetite, talk to your GP.
+            
+            See tips on how to eat more healthily.</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

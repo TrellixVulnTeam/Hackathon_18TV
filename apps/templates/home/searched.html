@@ -1,0 +1,19 @@
+
+
+{% block title %} Searched {% endblock title %}
+{% block content%}
+{% if searched %}
+<h1> You Searched for {{searched}}</h1>
+<br/>
+    {% for disease in diesases %}
+    {{disease }} <br/>
+    {{disease.description }} <br/>
+    {{disease.symptom }} <br/>
+    {{disease.precautions }} <br/>
+    {{disease.cures }} <br/><br/>
+{% endfor %}
+{% else %}
+<h1> You searched nothing</h1>
+{% endif %}
+{% endblock %}
+{% block javascripts %}{% endblock javascripts %}

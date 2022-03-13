@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HEALTH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body style=" background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);">
+
+  <!-- Links (sit on top) -->
+  
+  
+  <!-- Header with image -->
+  
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand  w3-large" style="margin: 30px 250px; border-style:inset; border-width:50px;">
+  
+  <!-- About Container -->
+  <div class="w3-container" id="about" style="background-color: #6495ED;">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WEIGHT MANAGEMENT</span></h2>
+    <p>Weight management includes the techniques and physiological processes that contribute to a person's ability to attain and maintain a certain weight. Most weight management techniques encompass long-term lifestyle strategies that promote healthy eating and daily physical activity.</p>
+    <p>Maintaining a healthy weight is important for health. In addition to lowering the risk of heart disease, stroke, diabetes, and high blood pressure, it can also lower the risk of many different cancers.</p><div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Over the long term, it's smart to aim for losing 1 to 2 pounds (0.5 to 1 kilogram) a week. Generally to lose 1 to 2 pounds a week, you need to burn 500 to 1,000 calories more than you consume each day, through a lower calorie diet and regular physical activity.</i></p>
+   
+    </div>
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WEIGHT MANAGEMENT STRATEGIES</span></h2>
+    <ul>
+        <li><h4><b>Stay hydrated.</b></h4><p>Drink plenty of water or other no-calorie unsweetened beverages. Avoid sugar-sweetened beverages.</p></li>
+        <li><h4><b>Eat a healthy breakfast daily. </b></h4><p>Seventy-eight percent of participants in the NWCR eat breakfast every day.</p></li>
+        <li><h4><b>Decrease screen time. </b></h4><p> More time in front of the television or computer means less time on your feet using calories. Sixty-two percent of NWCR participants watch less than 10 hours of TV per week. Choose enjoyable activities that keep you on your feet and moving during leisure time. This movement is important in addition to exercise time</p></li>
+        <li><h4><b>Make an appointment with a registered dietitian (RD).</b></h4><p>If you need expert advice for nutrition information, don’t hesitate to make an appointment with a registered dietitian. He or she can provide helpful tips and point you in the right direction for a healthy lifestyle change.</p></li>
+        <li><h4><b>Plan your Meals Ahead Of Time</b></h4><p>By planning meals in advance, you can make healthier choices that are not influenced by physical hunger. Plan home-cooked meals, reserving restaurant dining for special occasions. Packing low-calorie snacks like fresh fruits, vegetables and whole grains can help keep hunger controlled throughout the day.</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

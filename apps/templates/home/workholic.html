@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HEALTH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body style=" background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);">
+
+    <!-- Links (sit on top) -->
+    
+    
+    <!-- Header with image -->
+    
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand  w3-large" style="margin: 30px 250px; border-style:inset; border-width:50px;">
+    
+    <!-- About Container -->
+    <div class="w3-container" id="about" style="background-color: #6495ED;">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WORKHOLICNESS</span></h2>
+    <p>A workaholic is a person who works compulsively. The term originates from alcoholism. The person works at the cost of their sleep, and social functions such as meeting friends or family. While the term does not necessarily imply that the person enjoys their work, it can imply that they simply feel compelled to do it.</p>
+    <p>Workaholism is not recognised as a medical condition by the American Psychiatric Association's Diagnostic and Statistical Manual of Mental Disorders, which is considered the gold standard in diagnosing mental disorders</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Research indicates that workaholism affects between 27% and 30% of the general population today. In popular culture, "workaholism" is a buzzword often used to describe devotion to work in a positive light — by defining themselves as workaholics, people often think they are showcasing their passion for their jobs.</i></p>
+   
+    </div>
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TYPES OF WORKHOLICS</span></h2>
+    <ul>
+        <li><h4><b>Defeatist.</b></h4><p>The defeatist denies himself pleasure. This is one of the strongest drivers of workaholism. Excuses abound for the defeatist in action:
+
+           <BR> “I don’t have the time.”
+            
+           <BR> “I don’t deserve it.”
+            
+           <BR> “The work will just pile up if I took any time off.”
+            
+           <BR> The defeatist gets his fix through personal sacrifice. He’s the one who works late and misses his children’s game and school play so a co-worker can go golfing or get a manicure. He’s the one that gives up his favorite lunch because a co-worker forgot hers. The “thank you” initiates a warm feeling – it’s the quick fix. Unfortunately the guilt sets in soon after he realizes he missed again something he might enjoy.</p></li>
+        <li><h4><b>Saboteur.</b></h4><p>The saboteur loses things he values… or at least used to value. Carelessness marks the workaholic afflicted with self-sabotage because he’s distracted and obsessed with work. He might neglect his health – no time to waste at a doctor’s office. He forgets his wife’s birthday and cancels an anniversary dinner because his boss asked him to finish a project. He misplaces a “thumb drive” that has all of his presentations on it but didn’t take time to back it up.</p></li>
+        <li><h4><b> Punisher. </b></h4><p>This is the one of the most common causes of workaholism. “Nothing comes easy” and “no-pain-no-gain” have become the battle cry of the American work ethic. Now I’ll be the first to admit that effort and sacrifice are essential ingredients for success. In fact, some degree of self- punishment is required to build pride. It’s a given that we gain confidence when we push ourselves beyond our comfort zone and achieve something we didn’t think we could do. But when hard work becomes addiction to work, we begin to take more and more risks. We build a tolerance and then have something more to prove. If something isn’t working out despite all our effort and hard work, it must be because we aren’t working hard enough! Punishment once engaged becomes a self-sustaining negative behavior. We ignore warning signs and endure unhealthy levels of pain and stress. We become overconfident in our ability to recognize our limits. Courage leads to fearlessness and then to recklessness. The punisher starts by injuring only himself but over time begins to put others at risk too.</p></li>
+        <li><h4><b> Martyr.</b></h4><p>Misery loves company personifies this behavior. This is the “woe is me” source of workaholism. It stems from a sense of hopelessness and futility. Even when opportunities to lessen the workload or get relief present themselves, the martyr declines the help. “What difference will it make?” he thinks. “You just can’t find good help today” brings a chorus of agreement which is exactly the response that gives him the “jolt” to keep going. At least he feels that someone understands him. Martyrs don’t really want to stop working so hard. They want others to feel pity and agree that life’s a bitch.</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

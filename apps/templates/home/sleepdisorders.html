@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HEALTH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body style=" background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);">
+
+<!-- Links (sit on top) -->
+
+
+<!-- Header with image -->
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand  w3-large" style="margin: 30px 250px; border-style:inset; border-width:50px;">
+
+<!-- About Container -->
+<div class="w3-container" id="about" style="background-color: #6495ED;">
+  <div class="w3-content" style="max-width:700px">
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">TIRED OF SLEEP DISORDERS</span></h2>
+    <h3>WHAT IS SLEEP DISORDER</h3>
+    <p>Insomnia - being unable to fall asleep and stay asleep. This is the most common sleep disorder. Sleep apnea - a breathing disorder in which you stop breathing for 10 seconds or more during sleep. Restless leg syndrome (RLS) - a tingling or prickly sensation in your legs, along with a powerful urge to move them.</p>
+    <p>Sleep disorders are a group of conditions that affect the ability to sleep well on a regular basis. Whether they are caused by a health problem or by too much stress, sleep disorders are becoming increasingly common in the United States.
+
+       .</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>""Sleeping Beauty Syndrome," Klein-Levin Syndrome (KLS) is a rare sleep disorder marked by recurring episodes of hypersomnia where the patient sleeps for extensive lengths of time: up to 20 hours per day..</i></p>
+   
+    </div>
+    <h2 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MANAGING SLEEP DISORDERS</span></h2>
+    <ul>
+        <li><h4><b>Wake up at the same time each day.</b></h4><p>It is tempting to sleep late on weekends, especially if you have had poor sleep during the week. However, if you suffer from insomnia you should get up at the same time every day in order to train your body to wake at a consistent time. </p></li>
+        <li><h4><b>Exercise regularly</b></h4><p>Regular exercise can improve sleep quality and duration. However, exercising immediately before bedtime can have a stimulant effect on the body and should be avoided. Try to finish exercising at least three hours before you plan to retire for the night.</p></li>
+        <li><h4><b>Do not eat or drink right before going to bed</b></h4><p>Eating a late dinner or snacking before going to bed can activate the digestive system and keep you up. If you suffer from gastroesophageal reflux (GERD) or heartburn, it is even more important to avoid eating and drinking right before bed since this can make your symptoms worse. In addition, drinking a lot of fluids prior to bed can overwhelm the bladder, requiring frequent visits to the bathroom that disturb your sleep.</p></li>
+        <li><h4><b>Reduce stress.</b></h4><p>There are a number of relaxation therapies and stress reduction methods you may want to try to relax the mind and the body before going to bed. Examples include progressive muscle relaxation (perhaps with audio tapes), deep breathing techniques, imagery, meditation, and biofeedback.</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
